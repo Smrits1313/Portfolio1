@@ -566,7 +566,7 @@ img {
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -589,6 +589,10 @@ img {
   text-transform: uppercase;
 }
 
+.feature-panel {
+  align-items: center;
+}
+
 .feature-panel .panel-icon {
   font-size: 1.5rem;
 }
@@ -606,13 +610,13 @@ img {
 }
 
 .feature-panel .wide-media-card h3 {
-  margin: 16.5px 18px 0;
-  font-size: 1.23rem;
+  margin: 14px 14px 0;
+  font-size: 1.05rem;
 }
 
 .feature-panel .wide-media-card p {
-  margin: 3px 18px 0;
-  font-size: 0.9rem;
+  margin: 3px 14px 0;
+  font-size: 0.78rem;
 }
 
 .reel-panel {
@@ -896,6 +900,10 @@ img {
 
   .shorts-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
 }

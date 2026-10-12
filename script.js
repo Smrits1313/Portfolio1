@@ -124,5 +124,17 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.08 },
 );
 
+document.querySelectorAll(".card-visual img").forEach((image) => {
+  image.addEventListener(
+    "error",
+    () => {
+      if (image.src.includes("maxresdefault")) {
+        image.src = image.src.replace("maxresdefault", "hqdefault");
+      }
+    },
+    { once: true },
+  );
+});
+
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 document.querySelector("#year").textContent = new Date().getFullYear();
